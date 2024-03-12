@@ -27,12 +27,12 @@
                <font>
                   <Font name="System Bold" size="13.0" />
                </font></Label>
-            <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ivNyil" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@arrow.png" />
                </image></ImageView>
             <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS" />
-            <Button mnemonicParsing="false" text="Random" />
+            <Button mnemonicParsing="false" onMouseClicked="#onRandomClick" text="Random" />
          </children>
       </VBox>
    </children>
