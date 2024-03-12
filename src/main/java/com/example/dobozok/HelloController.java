@@ -93,7 +93,6 @@ public class HelloController {
         else if(t[s+1][o].equals("box")) { lt[s][o].setGraphic(new ImageView(box)); t[s][o] = "box"; zartDb++;}
         fs = s;
         fo = o;
-
         lbZart.setText(zartDb + " db");
         lbNyitott.setText(nyitottDb + " db");
         torol();
