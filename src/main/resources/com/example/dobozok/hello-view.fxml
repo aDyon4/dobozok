@@ -15,7 +15,7 @@
                <image>
                   <Image url="@boxopen.png" />
                </image></ImageView>
-            <Label text="0 db">
+            <Label fx:id="lbNyitott" text="0 db">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font></Label>
@@ -23,7 +23,7 @@
                <image>
                   <Image url="@box.png" />
                </image></ImageView>
-            <Label text="0 db">
+            <Label fx:id="lbZart" text="0 db">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font></Label>
