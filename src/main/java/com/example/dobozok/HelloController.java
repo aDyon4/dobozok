@@ -65,6 +65,7 @@ public class HelloController {
         for(int s = 0;s<10;s++){
             for(int o = 0;o<15;o++){
                 lt[s][o].setGraphic(new ImageView(nulll));
+                t[s][o] = "null";
             }
         }
 
@@ -80,17 +81,15 @@ public class HelloController {
                 if(t[s][o].equals("box")) {
                     lt[s+1][o].setGraphic(new ImageView(box));
                     t[s+1][o] = "box";
-                    zartDb++;
                 }
 
             }
         }
-        lbZart.setText(zartDb + " db");
     }
 
     int fs = 0, fo=0;
     private void katt(int s, int o){
-        if(t[s-1][o].equals("null") && t[s][o].equals("box")) { lt[s][o].setGraphic(new ImageView(boxopen)); t[s][o] = "boxopen"; nyitottDb++; zartDb--;}
+        if(t[s-1][o].equals("null") && t[s][o].equals("box")) { lt[s][o].setGraphic(new ImageView(boxopen)); t[s][o] = "boxopen"; nyitottDb++;}
         else if(t[s+1][o].equals("box")) { lt[s][o].setGraphic(new ImageView(box)); t[s][o] = "box"; zartDb++;}
         fs = s;
         fo = o;
@@ -102,5 +101,4 @@ public class HelloController {
     private void torol(){
         //lt[fs][fo].setGraphic(new ImageView(nulll)); t[fs][fo] = "null";
     }
-
 }
